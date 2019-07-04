@@ -1,0 +1,87 @@
+---
+layout: default-bg
+title: Portfolio
+active: portfolio
+---
+<section class="mt-4 mt-md-5">
+    <h3 class="text-left section-title">Recent <b>Projects</b></h3>
+
+    <div class="row mt-md-3 p-2 py-3 portfolio-links" id="">
+        {% assign counter = 0 %}
+        {% for item in site.data.portfolio-links %}
+            {% if item.type == nil %}
+                {% assign counter = counter | plus: 1 %}
+                <div class="col col-12 col-md-3 p-0 p-md-2 py-2">
+                    <a href="{{ site.baseurl }}/portfolio/{{ item.link }}">
+                        <div class="card card-focus container">
+                            <div class="row text-left align-items-center px-3 px-md-0">
+                                <div class="col col-4 col-md-12 card-img-top p-0">
+                                    <div id="" class="img-container img-responsive">
+                                        <img src="{{ site.baseurl }}/portfolio/{{ item.link }}/{{ item.image }}" alt="" class="img-fluid">
+                                    </div>  
+                                </div>
+                                <div class="col col-8 col-md-12 p-2 px-md-3 text-container">
+                                    <div class="pt-1 pt-md-0">
+                                        <div class="float-left">
+                                            <div class="text-black-50 font-weight-bold">{{ item.title }}</div>
+                                            <small class="text-secondary-dark font-montserrat">
+                                                {{ item.text }}
+                                            </small>
+                                        </div>
+                                        <h3 class="float-right arrow-right pt-2"><i class="fas fa-angle-right pl-2"></i></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    {% if counter <= 0 %}
+        No Data
+    {% endif %}
+</section>
+
+
+<section class="mt-4 mt-md-5">
+    <h3 class="text-left section-title">Other <b>Projects</b></h3>
+
+    <div class="row mt-md-3 p-2 py-3 portfolio-links" id="">
+        {% assign counter = 0 %}
+        {% for item in site.data.portfolio-links %}
+            {% if item.type %}
+                {% assign counter = counter | plus: 1 %}
+                <div class="col col-12 col-md-3 p-0 p-md-2 py-2">
+                    <a href="{{ site.baseurl }}/portfolio/{{ item.link }}">
+                        <div class="card card-focus container">
+                            <div class="row text-left align-items-center px-3 px-md-0">
+                                <div class="col col-4 col-md-12 card-img-top p-0">
+                                    <div id="" class="img-container img-responsive">
+                                        <img src="{{ site.baseurl }}/portfolio/{{ item.link }}/{{ item.image }}" alt="" class="img-fluid">
+                                    </div>  
+                                </div>
+                                <div class="col col-8 col-md-12 p-2 px-md-3 text-container">
+                                    <div class="pt-1 pt-md-0">
+                                        <div class="float-left">
+                                            <div class="text-black-50 font-weight-bold">{{ item.title }}</div>
+                                            <small class="text-secondary-dark font-montserrat">
+                                                {{ item.text }}
+                                            </small>
+                                        </div>
+                                        <h3 class="float-right arrow-right pt-2"><i class="fas fa-angle-right pl-2"></i></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    {% if counter <= 0 %}
+        No Data
+    {% endif %}
+</section>

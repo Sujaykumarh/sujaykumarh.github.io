@@ -1,0 +1,41 @@
+
+@import colors
+    
+.hideCursor 
+    cursor: default
+    -webkit-touch-callout: none // iOS Safari
+    -webkit-user-select: none   // Chrome/Safari/Opera
+    -khtml-user-select: none    // Konqueror
+    -moz-user-select: none      // Firefox
+    -ms-user-select: none       // Internet Explorer/Edge
+
+.disableSelector
+    -webkit-touch-callout: none // iOS Safari
+    -webkit-user-select: none   // Chrome/Safari/Opera
+    -khtml-user-select: none    // Konqueror
+    -moz-user-select: none      // Firefox
+    -ms-user-select: none       // Internet Explorer/Edge
+    user-select: none           // Non-prefixed version, currently not supported by any browser
+
+*
+    // Default transitions
+    -webkit-transition: all 0.2s ease-in-out
+    -moz-transition: all 0.2s ease-in-out
+    transition: all 0.2s ease-in-out
+
+*:hover, *:focus
+    outline: none
+    text-decoration: none
+
+// Default Cursor - TODO
+    *
+        cursor: default !default
+        //cursor: default
+
+a, a:hover
+    color: unset
+    text-decoration: none
+
+//.container-fluid, .row, .col
+//    margin: 0px
+//    padding: 0px

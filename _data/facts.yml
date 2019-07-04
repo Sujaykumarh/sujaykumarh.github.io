@@ -1,0 +1,48 @@
+## Random Facts
+#
+#  text : Text
+#  icon : icon    - Fontawesome icon - fas { solid}
+
+-
+  text : Computer Tech
+  icon : fa-heart
+
+-
+  text : Fix mobiles, computers
+  icon : fa-tools
+
+-
+  text : Photograpy Love. Capturing moments
+  icon : fa-camera-retro
+
+-
+  text : Bonsai enthusiast
+  icon : fa-tree
+
+-
+  text : Foodie &amp; Love to cook
+  icon : fa-utensils
+
+-
+  text : I try to learn new things
+  icon : fa-glasses
+
+-
+  text : Goals Travel Earth, <small>to explore places never been to</small>
+  icon : fa-paper-plane
+
+-
+  text : Someday will travel in space, <small>to infinity and beyond</small>
+  icon : fa-rocket
+
+-
+  text : Artificial Intelligence fascinates me
+  icon : fa-robot
+
+-
+  text : Computer Tech
+  icon : fa-heart
+
+-
+  text : Computer Tech
+  icon : fa-heart

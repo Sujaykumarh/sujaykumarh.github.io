@@ -1,0 +1,64 @@
+---
+layout: default-bg
+title: Blog
+active: blog
+permalink: /blog/
+---
+
+<section class="my-5">
+    <h2 class="section-title"><b>Blog</b></h2>
+    <h6 class="section-subtitle text-secondary-dark">Personal Portal of thoughts</h6>
+</section>
+
+<section class="blog-posts">
+    <div class="row">
+
+        <!-- TOOD -->
+        <!--
+        <div class="col col-8 py-md-3">
+        -->
+        <div class="col col-12 py-md-3">
+            <div class="card-columns">
+                {% assign posts_size = site.posts | size %}
+                {% if posts_size > 0 %}
+                    {% for post in site.posts %}
+                    <div class="card m-lg-2">
+                        <a href="{{ site.baseurl }}{{ post.url }}">
+                            {% if post.image %}
+                            <div class="img-container">             
+                                <img src="{{ site.baseurl }}/assets/images/posts/{{ post.image }}" alt="" class="img-fluid">                
+                            </div>
+                            {% endif %}
+                            <div class="card-body p-2 transition-none">
+                                <p class="card-title m-0 pt-2 text-secondary-darker text-capitalize">{{ post.title }}</p>
+                                <small class="card-text text-secondary-dark">
+                                    {{ post.excerpt | strip_html | strip_newlines | truncate: 125 }}
+                                </small>                    
+                            </div>
+                            {% if post.date %}
+                            <footer class="card-footer px-2">
+                                <div class="card-text card-text-updated">
+                                    <small class="float-left pt-1">Posted on: {{ post.date | date_to_string }}</small>
+                                    <h4 class="text-muted float-right arrow-right m-0 pr-2"><i class="fas fa-angle-right pl-2"></i></h4>
+                                </div>
+                            </footer>
+                            {% endif %}
+                        </a>
+                    </div>
+                    {% endfor %}     
+                {% else %}
+                    No posts
+                {% endif %}  
+            </div>  
+        </div>
+
+        <!-- TOOD -->
+        <!--
+        <div class="col col-3 offset-1 py-md-3">
+            <p class="text-secondary-dark my-3">Categories</p>
+
+            <a href="#" class="text-secondary-darker pl-2">• link</a>
+        </div>
+        -->
+    </div>
+</section>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1200"
+   height="800"
+   viewBox="0 0 1200 800"
+   version="1.1"
+   id="svg842"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="browser-background-desktop.svg">
+  <title
+     id="title1519">Browser Background</title>
+  <defs
+     id="defs836">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter2497">
+      <feFlood
+         flood-opacity="0.145098"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood2487" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite2489" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="15"
+         result="blur"
+         id="feGaussianBlur2491" />
+      <feOffset
+         dx="-5"
+         dy="5"
+         result="offset"
+         id="feOffset2493" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite2495" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="588.51638"
+     inkscape:cy="428.76882"
+     inkscape:document-units="px"
+     inkscape:current-layer="g1432"
+     showgrid="false"
+     units="px"
+     scale-x="1"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1010"
+     inkscape:window-x="1600"
+     inkscape:window-y="28"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata839">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Browser Background</dc:title>
+        <dc:date>March 2019</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Sujaykumar Hublikar</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>Sujaykumar Hublikar</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>image</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>Browser Background
+
+OsX, Windows</dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>https://github.com/Sujaykumarh</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-nc-sa/4.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:prohibits
+           rdf:resource="http://creativecommons.org/ns#CommercialUse" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Style - OsX"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-232.41665)"
+     style="display:inline">
+    <g
+       id="g1432"
+       transform="translate(0,186)">
+      <rect
+         rx="24"
+         y="112.70236"
+         x="100"
+         height="964.28571"
+         width="1080"
+         id="rect1408"
+         style="opacity:1;fill:#f5f5f5;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:31.89075661;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill;filter:url(#filter2497)"
+         ry="24" />
+      <g
+         transform="translate(-800.99999)"
+         id="g1421"
+         style="opacity:0.7">
+        <circle
+           style="opacity:1;fill:#faf562;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+           id="path1412"
+           cx="998.57141"
+           cy="162.41666"
+           r="11.428572" />
+        <circle
+           r="11.428572"
+           cy="162.41666"
+           cx="1038.5714"
+           id="circle1414"
+           style="opacity:1;fill:#a1dd70;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill" />
+        <circle
+           style="opacity:1;fill:#ee4266;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:25;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+           id="circle1416"
+           cx="958.57141"
+           cy="162.41666"
+           r="11.428572" />
+      </g>
+    </g>
+    <rect
+       rx="0"
+       y="392.70236"
+       x="132.14285"
+       height="964.28571"
+       width="1015.7143"
+       id="rect1410"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:30.9270668;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+       ry="0" />
+    <rect
+       ry="0"
+       style="opacity:1;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:30.9270668;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect1443"
+       width="1015.7143"
+       height="964.28571"
+       x="-1503.8572"
+       y="194.70236"
+       rx="0" />
+    <text
+       id="text1457"
+       y="1268.4166"
+       x="-1180"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:1.25;font-family:Niconne;-inkscape-font-specification:Niconne;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:Roboto"
+         y="1268.4166"
+         x="-1180"
+         id="tspan1455"
+         sodipodi:role="line">^ for clipping screenshots</tspan></text>
+    <text
+       id="text1487"
+       y="972.41663"
+       x="1436"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:1.25;font-family:Niconne;-inkscape-font-specification:Niconne;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:Roboto"
+         y="972.41663"
+         x="1436"
+         id="tspan1485"
+         sodipodi:role="line">OsX window style</tspan></text>
+  </g>
+  <g
+     transform="translate(0,-232.41665)"
+     id="g1483"
+     inkscape:groupmode="layer"
+     inkscape:label="Style - Windows"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <g
+       id="g1469">
+      <g
+         id="g1517">
+        <rect
+           rx="23.142916"
+           y="112.70236"
+           x="100"
+           height="964.28571"
+           width="1080"
+           id="rect1459"
+           style="opacity:1;fill:#f2f2f2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:31.89075661;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill" />
+        <g
+           id="g1508">
+          <rect
+             style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#d3d3d3;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+             id="rect1491"
+             width="14.216345"
+             height="14.216345"
+             x="971.32043"
+             y="154.86008"
+             rx="0"
+             ry="0" />
+          <path
+             style="fill:none;stroke:#d3d3d3;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             d="m 883.9543,166.5644 h 15.623"
+             id="path1493"
+             inkscape:connector-curvature="0" />
+          <g
+             id="g1501"
+             transform="matrix(0.96290995,0,0,0.96290995,-117.73976,6.2479779)">
+            <path
+               style="fill:none;stroke:#d3d3d3;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               d="m 1220.9866,152.94392 14.8113,14.79597"
+               id="path1495"
+               inkscape:connector-curvature="0" />
+            <path
+               inkscape:connector-curvature="0"
+               id="path1497"
+               d="m 1235.7902,152.93626 -14.7959,14.8113"
+               style="fill:none;stroke:#d3d3d3;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <rect
+       ry="0"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:30.9270668;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+       id="rect1471"
+       width="1015.7143"
+       height="964.28571"
+       x="132.14285"
+       y="206.70236"
+       rx="0" />
+    <rect
+       rx="0"
+       y="194.70236"
+       x="-1503.8572"
+       height="964.28571"
+       width="1015.7143"
+       id="rect1477"
+       style="opacity:1;fill:#cccccc;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:30.9270668;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:1.25;font-family:Niconne;-inkscape-font-specification:Niconne;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="-1180"
+       y="1268.4166"
+       id="text1481"><tspan
+         sodipodi:role="line"
+         id="tspan1479"
+         x="-1180"
+         y="1268.4166"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:Roboto">^ for clipping screenshots</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:1.25;font-family:Niconne;-inkscape-font-specification:Niconne;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       x="1436"
+       y="972.41663"
+       id="text1425"><tspan
+         sodipodi:role="line"
+         id="tspan1423"
+         x="1436"
+         y="972.41663"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Roboto;-inkscape-font-specification:Roboto">Window 10 window style</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+# Social Media profile links
+
+- title: Github
+  url: 'https://github.com/Sujaykumarh'
+  icon: fa-github
+  
+- title: Instagram
+  url: 'https://www.instagram.com/sujaykumarh/'
+  icon: fa-instagram
+  
+- title: Twitter
+  url: 'https://twitter.com/sujaykumarh'
+  icon: fa-twitter
+  
+- title: Youtube
+  url: 'https://www.youtube.com/sujaykumarhublikar'
+  icon: fa-youtube

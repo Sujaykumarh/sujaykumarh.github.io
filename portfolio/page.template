@@ -1,0 +1,23 @@
+---
+permalink               :   /portfolio/PageTitle  # Required
+
+title                   :   PageTitle             # Page Title for portfolio
+portfolio-page-link     :   worklink              # link to the work of portfolio - Optional
+portfolio-page-category :   category              # category of portfolio
+portfolio-page-date     :   date                  # date of work
+portfolio-page-desc     :   desc                  # desc of work
+portfolio-page-folder   :   folder                # folder of portfolio page - used for displaying images
+portfolio-page-img      :   img.ext               # Featured image of work - supporting image for portfolio - images should be placed in /portfolio inside indivdual folder named as link
+---
+
+<section class="border-bottom">
+    <div class="container mx-auto">
+        <div class="img-container">
+            <img class="img-fluid" src="{{ site.baseurl }}/assets/images/" alt="">  
+        </div>
+        <article class="py-5">
+            <h4>Title</h4>
+            <p>Paragraph Here</p>
+        </article>
+    </div>
+</section>

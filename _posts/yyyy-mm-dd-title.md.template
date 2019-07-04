@@ -1,0 +1,7 @@
+---
+layout      : post          # Post layout
+title       : title         # post title
+subtitle    : subtitle      # post subtitle
+categories  :               # Post category - Optional
+image       : img.ext       # Featured Image - image should be placed in /assets/images/posts
+---

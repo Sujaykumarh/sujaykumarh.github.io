@@ -1,0 +1,38 @@
+---
+layout: master
+---
+
+{% comment %}
+    Design inspired by => adhamdannaway.com
+    Clean neat
+{% endcomment %}
+
+<div id="portfolio-page" class="mt-5">
+
+    <section class="mt-5 border-bottom">
+        <div class="row container mx-auto">
+            <div class="col col-12 col-md-5 py-3 font-montserrat-light">
+                <h1 class="border-bottom py-3">{{ page.title }}</h1>
+                <p class="text-secondary-darker">{{ page.portfolio-page-category }} <span class="float-right">{{ page.portfolio-page-date }}</span></p>
+                <p class="mt-4">
+                    {{ page.portfolio-page-desc }}
+                </p>
+                {% if page.portfolio-page-link != "" %}
+                <div class="text-right py-3">
+                    <p class="font-montserrat text-secondary-darker"><a href="{{ page.portfolio-page-link }}" target="_blank" class="btn btn-primary px-5 my-4 float-right">View <small><i class="fas fa-arrow-right pl-2"></i></small></a></p>
+                </div>
+                {% endif %}
+            </div>
+            <div class="col col-12 col-md-7">
+                <div class="img-container h-100 align-bottom">
+                    <img class="img-fluid" src="{{ site.baseurl }}/portfolio/{{ page.portfolio-page-folder }}/{{ page.portfolio-page-img }}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="py-5 text-black-50">
+        {{ content }}
+    </div>
+
+</div>
