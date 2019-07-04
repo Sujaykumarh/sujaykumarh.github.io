@@ -1,0 +1,28 @@
+## Links to showcase Portfolio
+#
+# title   : title of project
+# text    : text supporting title
+# link    : url path Relative to /portfolio/
+# image   : supporting image for project  - images should be placed in /portfolio inside indivdual folder named as link
+# type    : if set project will be added under other projects [value set as other]
+
+## Projects
+
+- title : "DandeliView"
+  text  : "Website"
+  link  : "dandeliview"
+  image : "dandeliview.png"
+
+## Other Projects
+
+- title : "xCelParser"
+  text  : "Web Application"
+  link  : "xcelparser"
+  image : "xcelparser.png"
+  type  : "other"
+
+- title : "Sapphire Login"
+  text  : "Login Screen"
+  link  : "sapphire-login"
+  image : "sapphire-login.png"
+  type  : "other"

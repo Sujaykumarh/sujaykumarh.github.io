@@ -1,0 +1,33 @@
+# Languages i know
+#
+# Langauage   - Language name
+# Percentage  - out of 100
+# Badge       - extra content to display
+
+- language: English
+  percentage: 85
+  badge: ""
+
+- language: Hindi
+  percentage: 75
+  badge: ""
+
+- language: Kannada
+  percentage: 75
+  badge: ""
+
+- language: Marathi
+  percentage: 80
+  badge: ""
+
+- language: Konkani
+  percentage: 50
+  badge: "Beginner"
+
+- language: Telgu
+  percentage: 50
+  badge: "Beginner"
+
+- language: Japanese
+  percentage: 30
+  badge: "Beginner"

@@ -1,0 +1,40 @@
+---
+layout: master
+---
+
+<div class="container">
+
+    <div class="text-justify mx-auto" id="post-page">
+        <div class="py-2 text-secondary">
+            <a href="javascript:history.back()"> 
+                <small><i class="fas fa-arrow-left pr-2 text-muted"></i></small> Back
+            </a>
+        </div>
+
+        <h1 class="section-title py-3 border-bottom">{{ page.title }}</h1>
+        <p class="py-3 text-secondary">
+            <span class="float-left">{{ page.subtitle }}</span>
+            <span class="float-right">{{ page.date | date_to_string }}</span>
+        </p>
+
+        {% if page.image %}
+        <img src="{{ site.baseurl }}/assets/images/posts/{{ page.image }}" alt="" class="img-fluid py-3" />
+        {% endif %}
+        
+        <article class="py-3 text-secondary-dark">
+        {{ content }}
+        </article>
+
+        {% assign posts_size = site.posts | size %}
+        {% if posts_size > 1 %}
+        <div class="recent-posts">
+            <h4 class="mt-5 pt-4 pb-3 recent-posts-title">Recent Post{% if posts_size > 2 %}'s{% endif %}</h4>
+            {% for post in site.posts limit:6 %}
+            {% if post.url != page.url %} 
+                <h6 class="mb-3 pl-3"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h6>  
+            {% endif %}    
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>

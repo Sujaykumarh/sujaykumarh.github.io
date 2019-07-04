@@ -1,0 +1,70 @@
+## Gallery Images placed in /assets/images/gallery
+## Images are from Instagram
+## https://www.instagram.com/sujaykumarh
+
+- title : ""
+  src: "img_1.jpg"
+  link : ""
+  caption : ""
+
+- title : ""
+  src: "img_2.jpg"
+  link : ""
+  caption : ""
+
+- title : ""
+  src: "img_3.jpg"
+  link : ""
+  caption : ""
+
+- title : ""
+  src: "img_4.jpg"
+  link : ""
+  caption : ""
+
+- title : ""
+  src: "img_5.jpg"
+  link : ""
+  caption : ""
+
+- title : ""
+  src: "img_6.jpg"
+  link : ""
+  caption : ""
+
+- title : ""
+  src: "img_7.jpg"
+  link : ""
+  caption : ""
+
+- title : ""
+  src: "img_8.jpg"
+  link : ""
+  caption : ""
+
+- title : ""
+  src: "img_9.jpg"
+  link : ""
+  caption : ""
+
+- title : ""
+  src: "img_10.jpg"
+  link : ""
+  caption : ""
+
+- title : ""
+  src: "img_11.jpg"
+  link : ""
+  caption : ""
+
+- title : ""
+  src: "img_12.jpg"
+  link : ""
+  caption : ""
+
+# template
+#- title: ""
+#  type : "url"  # set if src is url type
+#  src: ""
+#  link : ""
+#  caption : ""

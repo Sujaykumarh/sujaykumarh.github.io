@@ -1,0 +1,235 @@
+---
+layout: master
+title: Home
+active: home
+---
+
+<section class="mt-3 mt-md-5 container">
+    <div class="row">
+        <div class="col col-12 col-lg-3 offset-lg-1">
+            <div class="d-flex h-100 img-container img-responsive" style="align-items: start;">
+                <img class="img-fluid" src="{{ site.baseurl }}/assets/images/me_round.png" alt="" style="">
+            </div>
+        </div>
+        <div class="col col-12 col-lg-8 pt-md-5 py-4 py-md-5 text-center text-md-left">
+            <div class="chat-bubble px-4 py-2 animated fadeInUp">
+                Hello I'm
+            </div>
+            <div class="display-4 font-montserrat-bold text-black-50 pt-3 animated fadeInUp" style="color: #5a5a5a; letter-spacing: 3px;">Sujaykumar Hublikar</div>
+            <div class="display-6 font-montserrat text-secondary-dark pt-1 pb-3 animated fadeInDown delay-1s">Product Designer</div>
+
+            <p class="font-montserrat text-secondary-darker pt-md-4 animated delay-1s fadeInDown">                
+                I am currently working as a freelancer. I design, code and build Websites, Apps, Electronics Projects you name it. I'm currently based in <a class="underline" target="_blank" href="https://goo.gl/maps/iRouSjWh5F12">Hubballi, Karnataka</a>
+                <br><br>
+                <span class="text-secondary-dark">I <i class="fas fa-heart"  style="color: #bd3b3b80;"></i> OpenSource &amp; use it to power my daily life.</span>
+            </p>
+
+            <div class="row text-center pt-2 pt-md-5 animated fadeInDown delay-1s">
+                <div class="col col-12 col-md-6 col-lg-4 offset-lg-4 mb-md-0 mb-4">
+                    <a href="{{ site.baseurl }}/contact" target="_blank" class="btn btn-link text-secondary-dark w-100 py-2">
+                        <i class="fas fa-download pr-3"></i>Get Resume</a>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-4 mb-3 mb-lg-2">
+                    <a href="{{ site.baseurl }}/portfolio" class="btn btn-primary w-100 py-2"> <i class="fas fa-eye px-3"></i> View Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<section class="px-3 px-md-0 py-3 py-md-5 text-center containerBg containerBg-fixed" style="background-image: url('{{ site.baseurl }}/assets/images/bg/bg_2.svg');">
+    <h2 class="section-title mt-md-5">My <b>work</b></h2>            
+    <p class="text-secondary-dark pt-1 pb-md-3">
+        Here are some things im good at
+    </p>
+    
+    <div class="card card-static container mt-md-5">
+        <div class="row mt-3 p-2 p-md-4 px-lg-5" id="sectionWork">
+            {% assign counter = 0 %}
+            {% for item in site.data.work %}
+                {% assign counter = counter | plus: 1 %}
+                <div class="col col-12 col-md-4 col-lg-3 pt-1 py-3 pt-md-5 border card-focus">
+                    <div class="row align-items-top text-left text-md-center">
+                        <div class="col col-3 col-md-12 card-img-top">
+                            <div id="" class="img-container img-responsive py-md-4">
+                                <img src="{{ site.baseurl }}/assets/images/illustrations/{{ item.image }}" alt="" class="img-fluid img-illustration-exp">
+                            </div>  
+                        </div>
+                        <div class="col col-9 col-md-12">
+                            <h5 class="text-black-50 font-weight-bold">{{ item.title }}</h5>
+                            <p class="text-secondary-darker pt-1">
+                                {{ item.text }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</section>
+
+<hr>
+
+<section class="my-3 my-md-5 row container mx-auto">
+    <div class="col col-md-8 col-12">
+        <div id="" class="img-container img-responsive">
+            <img src="{{ site.baseurl }}/assets/images/expirence.svg" alt="" class="img-fluid" style="max-height: 800px;">
+        </div>  
+    </div>
+
+    <div class="pt-5 pt-md-0 col col-md-4 col-12 text-center text-md-left">
+        <h1 class="section-title">Software &amp; <br class="d-none d-md-block"><b>Hardware</b></h1>
+        <h6 class="section-subtitle py-2 text-secondary-dark">Here are some of the Software &amp; Hardware i use and i'm familar with.</h6>
+        <div id="img-sitting" class="img-container img-responsive">
+            <img class="img-fluid" src="{{ site.baseurl }}/assets/images/illustrations/sitting_bench.svg" alt="">
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<!-- Recent Work -->
+<section class="py-3 py-md-5 containerBg containerBg-fixed" style="background-image: url('{{ site.baseurl }}/assets/images/bg/bg_3.svg');">
+    <div class="container mx-auto row">
+        <div class="col col-12 col-md-5 text-center text-md-left">
+            <h1 class="section-title">Recent <br class="d-none d-md-block"><b>Work</b></h1>
+            <h6 class="section-subtitle py-2 text-secondary-dark">Here are some of the Recent projects i have worked on.</h6>
+            <div class="img-container img-responsive d-none d-md-block">
+                <img class="img-fluid" src="{{ site.baseurl }}/assets/images/illustrations/sitting_computer.svg" alt="">
+            </div>
+        </div>
+        <div class="col col-12 col-md-7 px-0">
+
+            <div class="row p-md-2 portfolio-links" id="">
+                {% assign counter = 0 %}
+                {% for item in site.data.portfolio-links %}
+                    {% if item.type == nil %}
+                        {% assign counter = counter | plus: 1 %}
+                        {% if counter <= 6 %}
+                            <div class="col col-12 col-md-4 p-md-2 py-2 py-md-0">
+                                <a href="{{ site.baseurl }}/portfolio/{{ item.link }}">
+                                    <div class="card card-focus container">
+                                        <div class="row text-left align-items-center px-3 px-md-0">
+                                            <div class="col col-4 col-md-12 card-img-top p-0">
+                                                <div id="" class="img-container img-responsive">
+                                                    <img src="{{ site.baseurl }}/portfolio/{{ item.link }}/{{ item.image }}" alt="" class="img-fluid">
+                                                </div>  
+                                            </div>
+                                            <div class="col col-8 col-md-12 p-2 px-md-3 text-container">
+                                                <div class="pt-1 pt-md-0">
+                                                    <div class="float-left">
+                                                        <div class="text-black-50 font-weight-bold">{{ item.title }}</div>
+                                                        <small class="text-secondary-dark font-montserrat">
+                                                            {{ item.text }}
+                                                        </small>
+                                                    </div>
+                                                    <h3 class="float-right arrow-right pt-2"><i class="fas fa-angle-right pl-2"></i></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+            {% if counter >= 4 %}
+                <div class="col col-12 mt-3">
+                    <a href="{{ site.baseurl }}/portfolio" target="_blank" class="float-right py-2 px-4 text-secondary-darker link-underline">
+                        View More <small><i class="fas fa-arrow-right pl-2"></i></small>
+                    </a>
+                </div>
+                {% endif %}
+                {% if counter <= 0 %}
+                    No Data
+            {% endif %}
+
+        </div>
+    </div>
+</section>
+
+<hr class="container">
+
+
+<!-- Other Projects -->
+<section class="py-3 py-md-5 containerBg containerBg-fixed" style="background-image: url('{{ site.baseurl }}/assets/images/bg/bg_3.svg');">
+    <div class="container mx-auto row">
+        <div class="col col-12 col-md-7">        
+            <div class="row p-md-2 portfolio-links" id="">
+                {% assign counter = 0 %}
+                {% for item in site.data.portfolio-links %}
+                    {% if item.type %}
+                        {% assign counter = counter | plus: 1 %}
+                        {% if counter <= 6 %}
+                            <div class="col col-12 col-md-4 p-0 p-md-2 py-2">
+                                <a href="{{ site.baseurl }}/portfolio/{{ item.link }}">
+                                    <div class="card card-focus container">
+                                        <div class="row text-left align-items-center px-3 px-md-0">
+                                            <div class="col col-4 col-md-12 card-img-top p-0">
+                                                <div id="" class="img-container img-responsive">
+                                                    <img src="{{ site.baseurl }}/portfolio/{{ item.link }}/{{ item.image }}" alt="" class="img-fluid">
+                                                </div>  
+                                            </div>
+                                            <div class="col col-8 col-md-12 p-2 px-md-3 text-container">
+                                                <div class="pt-1 pt-md-0">
+                                                    <div class="float-left">
+                                                        <div class="text-black-50 font-weight-bold">{{ item.title }}</div>
+                                                        <small class="text-secondary-dark font-montserrat">
+                                                            {{ item.text }}
+                                                        </small>
+                                                    </div>
+                                                    <h3 class="float-right arrow-right pt-2"><i class="fas fa-angle-right pl-2"></i></h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+            {% if counter >= 4 %}
+                <div class="col col-12 mt-3">
+                    <a href="{{ site.baseurl }}/portfolio" target="_blank" class="float-right py-2 px-4 text-secondary-darker link-underline">
+                        View More <small><i class="fas fa-arrow-right pl-2"></i></small>
+                    </a>
+                </div>
+                {% endif %}
+                {% if counter <= 0 %}
+                    No Data
+            {% endif %}
+
+        </div>
+
+        <div class="col col-12 col-md-5 order-first order-md-last text-center text-md-left">
+            <h1 class="section-title">Other <br class="d-none d-md-block"><b>Projects</b></h1>
+            <h6 class="section-subtitle py-2 text-secondary-darker">Here are some other projects.</h6>
+            <div class="img-container img-responsive d-none d-md-block">
+                <img class="img-fluid" src="{{ site.baseurl }}/assets/images/illustrations/sitting_top.svg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+
+<section class="mt-3 mt-md-5 row text-center text-md-left container mx-auto" id="contact">
+    <div class="col col-12 col-md-4">
+        <h1 class="section-title">Get in <b>Touch</b></h1>
+    </div>
+
+    <div class="col col-12 col-md-8 text-black-50">
+        <h4>Interested in working together?</h4>
+        <p class="py-3">Have an intresting idea / Want to turn your dream product into reality / Hire me? </p>
+        <a href="{{ site.baseurl }}/contact" class="btn btn-primary d-block mx-sm-auto btn-lg px-5 mt-4 float-right">Let's do this <small><i class="fas fa-arrow-right pl-2"></i></small></a>
+    </div>
+
+</section>
+
+<div class="p-5"></div>

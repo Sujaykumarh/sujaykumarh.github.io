@@ -1,0 +1,135 @@
+---
+title: About
+active: about
+---
+<section class="row text-secondary-darker">
+    <div class="col col-md-6 col-12 order-12 order-md-0 text-justify">
+
+        <h1 class="section-title animated fadeInLeft pt-3"><b>About </b>Me</h1>
+
+        <p class="pt-2 animated fadeInLeft">
+            I'm a product designer based in <a class="active" target="_blank" href="https://goo.gl/maps/iRouSjWh5F12">Hubballi, Karnataka</a>. 
+            I have rich experience in design &amp; development of Websites, Andorid Apps &amp; Electronics Projects.
+            I enjoy photograpy, bit of tech nerd &amp; love code
+            <br>
+        </p>
+
+        <p class="pt-3 animated fadeInLeft">
+            I <i class="fas fa-heart"  style="color: #bd3b3b80;"></i> OpenSource &amp; use it to power my daily life. 
+            <br>
+            All the Projects i build are powered by OpenSource technologies . 
+        </p>
+        
+        <div class="row py-lg-5 py-2 animated fadeInDown delay-1s fast align-items-center align-items-lg-start">
+            <div class="col col-12 col-lg-3  py-2">
+                <div class="pr-2 float-left pt-3">Follow me:</div>
+            </div>
+            <div class="col col-12 col-lg-9 social-links  py-2">
+                <div class="float-md-right">
+                    {% for item in site.data.social-links %}
+                    <h3 class="d-inline-block px-3 py-2">
+                        <a href="{{ item.url }}" target="_blank" data-toggle="tooltip" data-placement="bottom" title="{{ item.title }}">
+                            <i class="fab {{ item.icon }}"></i>
+                        </a>
+                    </h3>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col col-md-6 col-12">
+        <div class="img-responsive d-flex h-100 img-container animated fadeInRight" style="align-items: center; justify-content: center;">
+            <img class="img-fluid" src="{{ site.baseurl }}/assets/images/me.png" alt="" style="">
+        </div>
+    </div>
+
+</section>
+
+
+<hr>
+
+<section class="row py-5">
+    <div class="col col-12 col-md-4">
+        <h3 class="section-title">Communication <br class="d-none d-md-block"> <b>Language</b></h3>
+    </div>
+    <div class="col col-12 col-md-8 mt-4 mt-md-0">
+        <div class="row">
+            {% for item in site.data.expirence-languages %}
+            <div class="col col-6 py-3">
+                {{ item.language }}
+                <span class="badge badge-primary ml-3 px-3">{{ item.badge }}</span>
+                <div class="progress mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: {{ item.percentage }}%" aria-valuenow="{{ item.percentage }}" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<section class="row py-5">
+    <div class="col col-12 col-md-4">
+        <h3 class="section-title pb-3">Random <br class="d-none d-md-block"> <b>Facts</b></h3>
+    </div>
+    <div class="col col-12 col-md-8 mt-2 mt-md-0 px-4 text-secondary-darker">
+        {% for item in site.data.facts %}
+            <div class="row pb-3">
+                <h5 class="col col-2 col-md-1 text-secondary-dark">
+                    <i class="fas {{ item.icon }}"></i>
+                </h5>
+                <p class="col col-10 col-md-11 p-0 pl-md-2">
+                    {{ item.text }}
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+<hr>
+
+<section class="row py-5">
+    <div class="col col-12 col-md-4">
+        <h3 class="section-title">Captured <br class="d-none d-md-block"> <b>Moments</b></h3>
+        <h6 class="section-subtitle text-secondary-darker py-2">I love taking photos here are a few.</h6>
+        <div class="d-flex h-100 img-container img-responsive pt-3" style="align-items: start;">
+            <img class="img-fluid" src="{{ site.baseurl }}/assets/images/camera.png" alt="" style=" max-height: 350px;">
+        </div>
+    </div>
+    <div class="col col-12 col-md-7 offset-md-1">
+
+        <div class="row gallery mt-5">
+            {% for item in site.data.gallery-images %}
+            {% assign image-src = site.baseurl | append: "/assets/images/gallery/" | append: item.src %}
+            {% if item.type == "url" %}
+            {% assign image-src = item.src %}
+            {% endif %}
+            <figure class="col col-4 col-md-3 figure">
+                <img src="{{ image-src }}" class="figure-img img-fluid rounded" alt="">
+                <figcaption class="figure-caption">{{ item.caption }}</figcaption>
+            </figure>
+            {% endfor %}
+        </div>
+        <a href="https://www.instagram.com/sujaykumarh" target="_blank" class="float-right py-2 mt-4 text-secondary-dark link-underline"> Visit Instagram <i class="fas fa-arrow-right pl-2 animated infinite pulse"></i></a>
+     </div>
+</section>
+
+
+<hr class="mt-5">
+
+<section class="py-5 px-3 text-black-50">
+    <p class="mx-auto text-left">
+        Like my portfolio? I have licensed it under <a class="px-md-2 underline" href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License, Version 2.0</a>, Feel free to Fork it on <b class="px-2"><a class="active" href="https://github.com/Sujaykumarh" target="_blank">GitHub</a></b>
+    </p>
+    <p class="mx-auto text-left pt-1">
+        If you do use this for your portfolio, please let me know via <a class="underline" href="https://twitter.com/sujaykumarh" target="_blank">@twitter</a> or <a class="underline" href="mailto:{{ site.email }}" target="_blank">email me</a>, would love to see it.
+    </p>
+
+    <div class="mt-5">
+        <a href="https://github.com/Sujaykumarh" target="_blank" class="float-right py-2 px-4 text-secondary-dark link-underline">
+            <small><i class="fas fa-code-branch pr-2"></i></small> Fork me <small><i class="fas fa-arrow-right pl-2"></i></small>
+        </a>
+    </div>
+</section>

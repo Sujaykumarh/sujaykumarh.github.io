@@ -1,0 +1,55 @@
+## Work done by me
+#
+# title   : title of project
+# text    : text supporting title
+# image   : supporting image - images should be placed in { projectPath }/assets/images/illustrations/
+
+-
+  title : Website & App
+  text  : Website development <small>{ E-commerce / Portfolio / Blog / Custom / Redesign }</small> & Android based app development.
+  image : icon-computer.svg
+
+-
+  title : Software Solutions
+  text  : Custom software solution tailored to your needs. Web based / Desktop app / Android app.
+  image : icon-devices.svg
+
+-
+  title : iOT
+  text  : Smart Home Solutions / Automation Solutions. <br><small class="text-secondary">{ Internt Of Things }</small>
+  image : icon-iot.svg
+
+-
+  title : Educational Projects
+  text  : Academic related / Demonstration projects. <br> Hardware or Software based.
+  image : icon-eduProject.svg
+
+-
+  title : Robotics Projects
+  text  : Robotics Solutions can be Educational based or for Demonstration.
+  image : icon-robot.svg
+
+-
+  title : Embedded Projects
+  text  : ARM / 8051 / Arduino etc.. based projects.
+  image : icon-chip.svg
+
+-
+  title : Logo, Illustrations & Branding
+  text  : Logo design, Illustrations & Branding for products / company / individuals .
+  image : icon-branding.svg
+
+-
+  title : 3D Design & Animation
+  text  : Custom 3D Design & Animations. <br><small class="text-secondary"> { Modelling / Assets / Rigging / Animation } </small>
+  image : icon-3d.svg
+
+-
+  title : DTP Work
+  text  : Custom Brouchers / Gift Cards / Invitations { E-invite } / Typing. <br><small class="text-secondary"> General Desktop Publishing Work </small>
+  image : icon-dtp.svg
+
+-
+  title : Support
+  text  : Custom PC Builds / PC Repair, Maintenance / Mobile Repair. <br><small class="text-secondary"> Hardware & Networking </small>
+  image : icon-devices-fix.svg

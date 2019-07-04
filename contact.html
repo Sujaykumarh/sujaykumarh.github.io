@@ -1,0 +1,41 @@
+---
+layout: default-bg
+title: Contact
+active: contact
+---
+<div class="pt-md-5">
+
+    <section class="mx-auto card card-static p-2 p-sm-3 p-md-5 containerBg" style="background: url('{{ site.baseurl }}/assets/images/bg/bg_1.svg');">
+        <div class="row align-items-center">
+            <div class="col col-12 col-lg-6 pt-4 p-sm-5 p-md-0">
+                <h3 class="section-title text-center text-md-left"><i class="fas fa-paper-plane text-secondary pr-3"></i>Get in <b>Touch</b> </i></h3>
+
+                <div>        
+                    {% include contact-form.html %}
+                </div>
+            </div>
+            <div class="col col-12 col-lg-5 offset-lg-1 mt-5 mt-lg-0 px-4 px-md-0 py-4">
+                <div class="card card-static p-2 pt-4 px-sm-3 px-md-5 py-md-4 text-center">
+                    <h3 class="section-title pb-3">Say <b>Hi</b> <i class="fas fa-comment text-secondary pl-3"></i></h3>
+                    <hr>
+                    <div class="py-4">
+                        <a class="text-secondary-darker" href="mailto: {{ site.email }}">{{ site.email }}</a>
+                    </div>
+                    <hr>
+                    <div class="py-4">
+                        <div class="social-links">
+                            {% for item in site.data.social-links %}
+                            <h5 class="d-inline-block px-3 py-2 text-secondary-dark">
+                                <a href="{{ item.url }}" target="_blank" data-toggle="tooltip" data-placement="bottom" title="{{ item.title }}">
+                                    <i class="fab {{ item.icon }}"></i>
+                                </a>
+                            </h5>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>

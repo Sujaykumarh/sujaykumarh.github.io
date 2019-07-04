@@ -1,0 +1,25 @@
+<footer class="footer">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col col-12 col-md-6 col-lg-4 text-black-50">
+                &copy; 2019 <a class="pl-2" href="/">Sujaykumar. Hublikar</a>
+            </div>
+
+            <small class="col col-12 col-md-6 col-lg-4 mt-4 mt-md-0 text-center text-black-50">
+                <a href="{{ base.url }}/privacy">Privacy</a> • <a href="{{ base.url }}/terms">Terms</a>
+            </small>
+
+            <div class="col col-12 col-md-12 col-lg-4 mt-4 mt-md-5 mt-lg-0 text-center">
+                <div class="float-lg-right social-links">
+                    {% for item in site.data.social-links %}
+                        <h3 class="d-inline-block px-3">
+                            <a href="{{ item.url }}" target="_blank" data-toggle="tooltip" data-placement="top" title="{{ item.title }}">
+                                <i class="fab {{ item.icon }}"></i>
+                            </a>
+                        </h3>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

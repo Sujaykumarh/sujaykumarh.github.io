@@ -1,0 +1,21 @@
+# Navbar Items
+
+- title: Home
+  url: 
+  active: home
+
+- title: About
+  url: about
+  active: about
+
+- title: Portfolio
+  url: portfolio
+  active: portfolio
+
+- title: Blog
+  url: blog
+  active: blog
+
+- title: Contact
+  url: contact
+  active: contact

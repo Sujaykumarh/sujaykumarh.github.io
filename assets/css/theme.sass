@@ -1,0 +1,819 @@
+---
+---
+/* ************************************************************************************************* */
+/* ** Copyright (c) 2019 Sujaykumar.Hublikar <sujaykumar6390@gmail.com>.                          ** */
+/* **                                                                                             ** */
+/* ** This  Work is Licensed under the                                                            ** */
+/* ** Apache License, Version 2.0 - http://www.apache.org/licenses/LICENSE-2.0                    ** */
+/* **                                                                                             ** */
+/* ** Fork it on GitHub ==>  https://github.com/Sujaykumarh                                       ** */
+/* **                                                                                             ** */
+/* ************************************************************************************************* */
+
+// https://sass-lang.com/guide
+
+
+// Global imports
+@import fonts
+@import defaults
+
+// Fonts Class
+
+.font-roboto
+    font-family: $font-roboto
+
+.font-pacifico
+    font-family: $font-pacifico
+
+.font-baijamjuree
+    font-family: $font-baijamjuree
+
+.font-baijamjuree-light
+    font-weight: 200
+    font-family: $font-baijamjuree
+
+.font-montserrat
+    font-family: $font-montserrat
+    font-weight: 400
+
+.font-montserrat-light
+    font-family: $font-montserrat
+    font-weight: 200
+
+.font-montserrat-bold
+    font-family: $font-montserrat
+    font-weight: 700
+
+// Global Variables
+
+$article-width: 650px
+    
+$background-light : #fafafa
+$background : #fefefe
+$background-dark : #f5f5f5
+$background-darker : #f0f0f0
+$font-default : $font-baijamjuree
+
+// Theme colors
+$primary-color: color("blue-grey", "lighten-2") 
+$primary-color-lighter: lighten($primary-color, 25%) !default
+$primary-color-light: lighten($primary-color, 15%) !default
+$primary-color-dark: darken($primary-color, 15%) !default
+$primary-color-darker: darken($primary-color, 25%) !default
+
+$secondary-color: color("blue-grey", "lighten-4")
+$secondary-color-lighter: lighten($secondary-color, 25%) !default
+$secondary-color-light: lighten($secondary-color, 15%) !default
+$secondary-color-dark: darken($secondary-color, 15%) !default
+$secondary-color-darker: darken($secondary-color, 25%) !default
+
+$accent-color : color("indigo", "accent-1") !default
+$accent-color-light : color("indigo", "lighten-1") !default
+$accent-color-lighter : color("indigo", "lighten-3") !default 
+$accent-color-dark : color("indigo", "accent-2") !default
+$accent-color-darker : color("indigo", "base") !default
+$accent-shadow-color : rgba(63, 81, 181, .1) // Based on $accent-color : color("indigo", "accent-1")
+
+$success-color: color("green", "base") !default
+$error-color: color("red", "base") !default
+$link-color: color("light-blue", "darken-1") !default
+
+
+// +++++ Custom ++++++
+.containerBg
+    background-repeat: no-repeat !important
+    background-position: top !important
+    background-size: cover !important
+    background-color: #ffffff !important
+
+.containerBg-fixed
+    background-attachment: fixed !important
+
+// +++++ Bootstrap Override +++++ 
+
+// buttons
+
+.btn
+    border: 0
+    border-radius: 35px
+
+.btn:hover, .btn:focus
+    color: color("shades", "white")
+    box-shadow: none
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1)
+
+.btn-link
+    color: color("shades", "grey-8")
+
+.btn-link:hover, .btn-link:focus
+    color: color("shades", "grey-8")
+    box-shadow: none
+
+
+.btn-primary
+    background: $accent-color
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active
+    background: $accent-color-dark !important
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1) !important
+
+.btn-light
+    color: color("shades", "black-2")
+    background: $background-dark
+
+.btn-light:hover, .btn-light:focus
+    color: color("shades", "black")
+    background: color("shades", "white")
+
+.btn:disabled, .btn:disabled.btn:hover, .btn:disabled.btn:focus
+    color: color("shades", "white")
+    background: color("shades", "grey-8")
+    box-shadow: none
+
+
+// Badge
+.badge-primary
+    background: $accent-color-lighter
+
+
+// progress bar
+
+.progress
+    background: $background-dark
+
+    .progress-bar
+        background: $accent-color
+
+// Forms
+
+::placeholder
+    color: color("shades", "grey-8") !important
+
+::-ms-input-placeholder, ::-webkit-input-placeholder, ::-moz-input-placeholder
+    color: color("shades", "grey-8") !important
+
+.form-group
+    margin-bottom: 0
+
+.form-control:focus, .form-control:active
+    border-color: $accent-color
+    box-shadow: 0 0 .2rem .2rem $accent-shadow-color
+
+.form-control.error
+    border-color: #F29B9B
+
+.text-danger 
+    color: #F29B9B !important
+
+.text-muted
+    color: color("grey", "darken-2") !important
+
+.text-secondary-lighter
+    color: $secondary-color-lighter !important
+
+.text-secondary-light
+    color: $secondary-color-light !important
+
+.text-secondary
+    color: $secondary-color !important
+
+.text-secondary-dark
+    color: $secondary-color-dark !important
+
+.text-secondary-darker
+    color: $secondary-color-darker !important
+
+nav .navbar-nav .nav-item.active
+    .nav-link
+        color: $accent-color
+
+.carousel-indicators
+    margin: -30px
+
+    li
+        border: 0
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        background: color("shades", "grey")
+    
+    li.active
+        background: $accent-color-lighter
+
+// +++++ Defaults +++++ 
+
+.underline
+    text-decoration: underline
+    text-decoration-color: $accent-color
+
+.underline:hover
+    text-decoration: underline
+    text-decoration-color: $accent-color-dark
+
+
+
+@keyframes spin
+    0%  
+        transform: rotate(0deg)
+    100% 
+        transform: rotate(360deg)
+
+.spinner
+    width: 30px
+    height: 30px
+    border: 3px solid $accent-color
+    border-top: 1px solid rgba(0, 0, 0, 0)
+    border-radius: 50%
+    animation: spin 1s linear infinite
+
+hr
+    margin: 0
+    height: 3px
+    border: 0
+    background: #eee
+    border-radius: 15px
+
+    // border thick at center taper at ends
+    //border-radius: 50%
+    //background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, .15), rgba(0, 0, 0, 0))
+
+body
+    background: $background
+    font-family: $font-default
+    color: color("shades", "black-5")
+
+p
+    //line-height: 2
+    margin-bottom: 0
+
+.transition-none *
+    -webkit-transition: none
+    -moz-transition: none
+    transition: none
+
+.no-margin-padding
+    padding: 0
+    margin: 0
+
+.border-bottom
+    //border-bottom: 1px solid #dddddd !important
+
+.align-bottom
+    align-items: end !important
+
+.align-center
+    align-items: center !important
+
+.align-top
+    align-items: top !important
+
+
+// +++++ Navbar +++++ 
+.navbar-brand
+
+    img
+        max-height: 30px
+
+.navBg
+    // box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15)
+    box-shadow: 0 1px 3px 0 rgba(27,30,31,.26)
+    background: $background
+
+
+// +++++ Main Content +++++ 
+
+#main-content
+    min-height: 800px
+
+    #portfolio-page
+        article
+            margin: 0 auto
+            max-width: $article-width
+
+    a
+        &:not(.btn):not(.btn-icon)
+            //color: $accent-color-dark
+            color: inherit
+            
+    a:hover, a.active
+        &:not(.btn):not(.btn-icon)
+            color: $accent-color-darker
+
+
+.social-links 
+
+    a
+        color: color("grey", "base") !important
+
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+        margin: 0
+
+    a:hover
+        .fa-facebook-square
+            color: #3b5998 !important
+
+        .fa-instagram
+            color: #f56040 !important
+
+        .fa-flickr
+            color: #ff0084 !important
+
+        .fa-twitter
+            color: #1da1f2 !important
+
+        .fa-google-plus
+            color: #dd4b39 !important
+
+        .fa-youtube
+            color: #ff0000 !important
+
+        .fa-wordpress
+            color: #21759b !important
+
+        .fa-500px
+            color: #0099e5 !important
+
+        .fa-github-square, .fa-github
+            color: #333 !important
+
+
+
+// +++++ Footer +++++
+
+.footer
+    border-top: 1px solid #d8d8d8
+    background: #e9eaf2
+    font-family: $font-roboto
+    //font-weight: 300
+    //color: hsl(213, 60%, 60%)
+
+    *
+        color: hsl(213, 15%, 60%)
+        //color: unset
+
+    .row
+        align-items: center
+
+    .fab
+        //color: hsl(213, 60%, 80%)
+        //color: color("shades", "black-1")
+
+    a:hover
+        color: $accent-color-darker
+
+// +++++++ Section +++++++
+
+.section-title
+    color: $accent-color-light
+    font-weight: 200
+    b
+        color: $accent-color-dark
+
+.text-muted
+    //color: color("shades", "grey") !important
+    color: #e9e9f2 !important
+
+section
+    //min-height: 200px
+        
+
+
+    .carousel-item
+        //min-height: 350px
+        overflow: hidden
+
+        .img-container
+            height: 100%
+            max-height: 100%
+
+        img
+            max-height: 400px
+
+
+.card
+    overflow: hidden
+    border-width: 0
+    border-radius: 4px    
+    background: $background
+    min-height: 50px
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+    //box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+
+    img
+        width: 100%
+
+    .img-container
+        //max-height: 180px
+
+    .card-title
+        font-weight: bold
+
+    .card-body
+        background: $background-light
+        border-bottom-left-radius: 10px
+        border-bottom-right-radius: 10px
+        color: color("grey", "darken-2")
+
+        .card-text
+            color: color("shades", "grey")
+    
+.card-rounded
+    border-radius: 10px
+
+.card:hover, .card.active
+    //  box-shadow: 0 0 25px 5px rgba(46, 61, 73, .2)   // wide shadow
+    box-shadow: 0 0 15px 0 rgba(46, 61, 73, .2) // small softer shadow
+
+
+.card
+    cursor: pointer
+    background: color("shades", "white")
+    
+    .card-body
+        background: color("shades", "white")
+        color: $accent-color-darker
+
+        .card-text
+            color: color("shades", "black-1")
+    
+.card-static:hover, .card-static.active
+    //box-shadow: none
+    cursor: default
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+
+.card-focus:hover
+    img
+        transform: scale(1.05)
+        -ms-transform: scale(1.05) // IE 9
+        -moz-transform: scale(1.05) // Firefox
+        -webkit-transform: scale(1.05) // Safari and Chrome
+        -o-transform: scale(1.05) // Opera
+
+// +++++ Components +++++ 
+.img-illustration-exp
+    max-height: 80px !important
+    min-height: 50px !important
+
+.btn-icon
+    text-align: center
+    padding: 0 1.5rem
+    font-size: 2.5rem
+    background: hsl(213, 10%, 90%)
+    border-radius: 15px
+    color: color("shades", "white")
+    
+.btn-icon:hover
+    color: color("shades", "white") !important
+    background: hsl(231, 100%, 84%)
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .05)
+
+.img-container
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+
+.chat-bubble
+    background: #e2e5f2
+    display: inline-block
+    border-radius: 35px
+    border-bottom-left-radius: 0
+    color: color("shades", "black-1")
+    min-width: 50px
+
+
+// Design for cards in blog posts
+
+.blog-posts
+    .card
+
+        .card-title    
+            color: color("grey", "darken-2")
+
+        .card-text
+            color: color("grey", "darken-2")
+
+        .card-text-updated
+            color: color("shades", "grey-10")
+
+        .card-footer
+            padding: 0
+            // background: inherit
+
+        .img-container
+            max-height: 280px
+
+
+    .card:hover
+        //box-shadow: none
+
+        .card-title    
+            color: color("shades", "black-5")
+
+        .card-text-updated
+            color: color("shades", "grey-10")
+
+        img
+            transform: none
+            -ms-transform: none // IE 9
+            -moz-transform: none // Firefox
+            -webkit-transform: none // Safari and Chrome
+            -o-transform: none // Opera
+
+
+// Post View
+#post-page
+    margin: 0 auto
+    max-width: $article-width
+
+    .img-fluid
+        min-width: 100% // default 100% in container
+
+    .recent-posts
+        .recent-posts-title
+            border-top: 1px solid #dddddd
+
+
+.gallery
+
+    .gallery-item
+        //height: 200px
+        overflow: hidden
+        display: flex
+        align-items: center
+        justify-content: center
+
+        img
+            width: 100%
+
+    .gallery-item-overlay
+        width: 100%
+        height: 100%
+        background: rgba(63, 81, 181, .65)
+        text-align: center
+        padding-top: 20%
+        color: color("shades", "grey-1")
+        display : none
+
+    .gallery-item:hover
+        .gallery-item-overlay
+            display: block
+
+.link-underline:hover
+    text-decoration: underline
+    color: hsl(0, 0%, 50%) !important
+
+// social media links
+
+.fab
+    // Default transitions
+    -webkit-transition: all 0.1s ease-in-out
+    -moz-transition: all 0.1s ease-in-out
+    transition: all 0.1s ease-in-out
+
+#sectionWork 
+    .border
+        border-color: color("shades", "grey-1") !important
+        border-width: 0 !important
+
+    h5
+        margin-bottom: 0
+        font-size: 1rem
+
+    p
+        font-size: .85rem
+
+.portfolio-links
+
+    .arrow-right
+        color: hsl(213, 35%, 85%)
+
+    .card:hover
+        .arrow-right
+            color: hsl(213, 35%, 80%)
+
+        .text-container
+            background: hsl(213, 35%, 100%)
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++ RESPONSIVE DESIGN +++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//
+// Exxtra Small devices (phones with 576px below) > 360px   xs-*
+// Small devices (landscape phones, 576px and up)			sm-*
+// Medium devices (tablets, 768px and up) 					md-*
+// Large devices (desktops, 992px and up) 					lg-*
+// Extra large devices (large desktops, 1200px and up) 		xl-*
+//
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Variables    
+$device-xs : 360px
+$device-sm : 576px
+$device-md : 768px
+$device-lg : 992px
+$device-xl : 1200px
+
+
+// Max xl
+@media (max-width: $device-xl)
+
+
+
+// Max lg
+@media (max-width: $device-lg)
+
+    .img-responsive
+        img
+            max-height: 350px
+
+    #sectionWork 
+        .border:nth-last-child(n+2)
+            border-bottom-width: 1px !important
+
+        .border:nth-child(3n-2), .border:nth-child(3n-1)
+            border-right-width: 1px !important
+
+
+// Max md
+@media (max-width: $device-md)
+
+    .btn
+        font-size: .9rem
+
+    .navNoBg
+        // box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15)
+        box-shadow: 0 1px 3px 0 rgba(27,30,31,.26)
+        background: $background-light
+    
+    .blog-posts
+        .card-columns
+            column-count: 2
+
+    .img-responsive
+        img
+            max-height: 300px
+
+    .footer *
+        text-align: center
+        font-size: .9rem
+
+    .footer 
+        small
+            font-size: .7rem
+
+        .social-links .fab
+            font-size: 1.5rem
+
+
+    #sectionWork
+
+        h5
+            font-size: .9rem
+        p
+            font-size: .75rem
+
+        .border, .border:nth-child(n)
+            border-bottom-width: 0 !important
+            border-right-width: 0 !important
+        
+        .border:nth-last-child(n+2)
+            border-bottom-width: 1px !important
+
+// Max sm
+@media (max-width: $device-sm)
+    body
+        font-size: .8rem
+    
+    // bootstrap
+    .display-1, .display-2, .display-3
+        font-size: 2.5rem   
+
+    .display-4, .display-5  
+        font-size: 2rem    
+
+    .display-6
+        font-size: .9rem    
+
+    // Defaults
+    h1, h2
+        font-size: 2rem    
+        
+    h3
+        font-size: 1.5rem   
+
+    h4, h5
+        font-size: 1.2rem    
+
+    h6
+        font-size: .9rem
+    
+    .img-responsive
+        img
+            max-height: 200px
+
+    .card-columns
+        column-count: 1
+
+    .btn-icon
+        font-size: 2rem
+
+    .footer *
+        font-size: 1rem
+
+    .footer 
+        small
+            font-size: .7rem
+
+        .social-links .fab
+            font-size: 1.8rem
+
+
+
+// Max xs
+@media (max-width: $device-xs)
+
+    // bootstrap
+    .display-1, .display-2, .display-3
+        font-size: 1.75rem   
+
+    .display-4, .display-5  
+        font-size: 1.5rem    
+
+    .display-6
+        font-size: 1rem    
+
+    // Defaults
+    h1, h2
+        font-size: 1.5rem    
+        
+    h3
+        font-size: 1.2rem   
+
+    h4, h5
+        font-size: 1.1rem    
+
+    h6
+        font-size: 1rem
+
+    .img-responsive
+        img
+            max-height: 150px
+
+    .section-title, .section-subtitle 
+        text-align: center
+
+    .btn-icon
+        font-size: 1.5rem
+
+    .footer 
+        small
+            font-size: .8rem
+
+// Min xs
+@media (min-width: $device-xs)
+
+
+
+// Min sm
+@media (min-width: $device-sm)
+
+
+
+// Min md
+@media (min-width: $device-md)
+    .footer 
+        small
+            font-size: .8rem
+
+    .portfolio-links
+        .text-container
+            background: hsl(213, 35%, 98%)
+
+
+
+// Min lg
+@media (min-width: $device-lg)
+
+    .blog-posts
+        .card-columns
+            column-count: 3
+
+    #img-sitting
+        min-height: 500px
+
+
+    #sectionWork 
+        .border:nth-last-child(n+3)
+            border-bottom-width: 1px !important
+
+        .border:nth-child(n+0), 
+            border-right-width: 1px !important
+        
+        .border:nth-child(4n)
+            border-right-width: 0px !important
+
+// Min xl
+@media (min-width: $device-xl)
+
