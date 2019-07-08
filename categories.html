@@ -1,0 +1,80 @@
+---
+layout: default-bg
+title: Blog categories
+---
+
+<section class="my-5">
+    <h2 class="section-title"><b>Blog</b></h2>
+    <h6 class="section-subtitle text-secondary-dark">Personal Portal of thoughts</h6>
+</section>
+
+<section id="blog-posts">
+
+    <div class="row">
+        <!-- Posts -->
+        <div class="col col-12 col-md-8 blog-posts px-3">
+            {% assign posts_size = site.posts | size %}
+            {% if posts_size > 0 %}
+                {% for category in site.categories %}
+                    <h5 class="text-secondary" id="{{ category[0] }}">{{ category[0] }}</h5>
+                    <hr class="mb-4">
+                    <div class="mb-5">
+                    {% for post in category[1] %}
+                        <a href="{{ site.baseurl }}{{ post.url }}" class="row py-3 mt-3">
+                            <div class="col col-12 col-md-9">
+                                <h5 class="text-capitalize text-left text-md-justify">{{ post.title }}</h5>
+                                <p class="text-secondary">
+                                    {{ post.excerpt | strip_html | strip_newlines | truncate: 125 }}
+                                </p>
+                                <hr class="my-1">
+                                {% assign num_words = post.content | strip_html | number_of_words %}
+                                {% assign minutes = num_words | divided_by: 200 %}
+                                {% assign minutes_f = num_words | divided_by: 200.0 %} 
+                                {% assign minutes_i = num_words | divided_by: 200 %} 
+
+                                {% assign diff = minutes_f | minus: minutes_i %} 
+                                {% if diff >= 0.5 %}
+                                    {% assign minutes = minutes_i | plus: 1 %}
+                                {% else %}
+                                    {% assign minutes = minutes_i %}
+                                {% endif %}
+                                {% if minutes <= 1 %}
+                                    {% assign reading_time = '1' | append: ' min' %}
+                                {% else %}
+                                    {% assign reading_time = minutes | append: ' min' %}
+                                {% endif %}
+                                <small class="text-secondary-light float-right py-2 pr-3">
+                                    {{ post.date | date: "%d %b, %y" }} <span class="px-2">•</span> {{ reading_time }} read
+                                </small>
+                            </div>
+
+                            <div class="col d-none d-md-block col-md-3">
+                                <div class="img-container">
+                                    <img class="img-fluid" src="{{ site.baseurl }}/assets/images/posts/{{ post.image }}" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    {% endfor %}    
+                    </div>
+                {% endfor %}
+            {% else %}
+                No posts
+            {% endif %}  
+        </div>
+
+        {% if posts_size > 0 %}
+            <!-- Category -->
+            <div class="col col-12 col-md-3 offset-md-1 mt-md-0 mt-5">
+                <h5 class="text-secondary">Category</h5>
+                <hr class="mb-4">
+
+                <div class="px-2 categories">
+                    {% for category in site.categories %}
+                        <h6 class="pb-3"><small class="fas fa-tag px-2 text-secondary-lighter"></small><a href="{{ site.baseurl }}/categories/#{{ category[0] | slugify }}" class=""> {{ category[0] }} <small class="text-secondary-light"> <span class="px-2">•</span> {{ category[1].size }} post{% if category[1].size > 1 %}'s {% endif %}</small></a></h6>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}  
+    </div>
+
+</section>
