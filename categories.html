@@ -1,10 +1,12 @@
 ---
 layout: default-bg
 title: Blog categories
+active: blog
+permalink: /blog/categories/
 ---
 
 <section class="my-5">
-    <h2 class="section-title"><b>Blog</b></h2>
+    <h2 class="section-title"><a href="{{ site.baseurl }}/blog"><b>Blog</b></a></h2>
     <h6 class="section-subtitle text-secondary-dark">Personal Portal of thoughts</h6>
 </section>
 
@@ -70,7 +72,7 @@ title: Blog categories
 
                 <div class="px-2 categories">
                     {% for category in site.categories %}
-                        <h6 class="pb-3"><small class="fas fa-tag px-2 text-secondary-lighter"></small><a href="{{ site.baseurl }}/categories/#{{ category[0] | slugify }}" class=""> {{ category[0] }} <small class="text-secondary-light"> <span class="px-2">•</span> {{ category[1].size }} post{% if category[1].size > 1 %}'s {% endif %}</small></a></h6>
+                        <h6 class="pb-3"><small class="fas fa-tag px-2 text-secondary-lighter"></small><a href="{{ site.baseurl }}/blog/categories/#{{ category[0] | slugify }}" class=""> {{ category[0] }} <small class="text-secondary-light"> <span class="px-2">•</span> {{ category[1].size }} post{% if category[1].size > 1 %}'s {% endif %}</small></a></h6>
                     {% endfor %}
                 </div>
             </div>
