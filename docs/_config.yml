@@ -38,8 +38,8 @@ permalink: /blog/:categories/:title
 ##############
 
 # variables
-email: sujaykumar6390@gmail.com
-weburl : https://sujaykumarh.github.io/
+email: hello@sujaykumarh.com
+weburl : https://sujaykumarh.com/
 
 # front matter defaults
 defaults:

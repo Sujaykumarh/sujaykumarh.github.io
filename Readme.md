@@ -2,7 +2,7 @@
 
 :sunglasses: My Portfolio
 
-Visit :point_right: [sujaykumarh.github.io](https://sujaykumarh.github.io/)
+Visit :point_right: [sujaykumarh.com](https://sujaykumarh.com/)
 
 
 <br>
@@ -29,7 +29,7 @@ Get inspired form some of these inspirational portfolio
 
 #### Code
 
-Copyright (c) 2019 Sujaykumar.Hublikar <sujaykumar6390@gmail.com>
+Copyright (c) 2019 Sujaykumar.Hublikar <hello@sujaykumarh.com>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -53,7 +53,7 @@ All the images are licensed under a [Creative Commons Attribution-NonCommercial-
 
 ##### Attribution
 
-{ImageName} by [Sujaykumar.Hublikar](https://sujaykumarh.github.io/) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)
+{ImageName} by [Sujaykumar.Hublikar](https://sujaykumarh.com/) is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0)
 
 <br>
 
@@ -66,4 +66,4 @@ I :heart:  Open-Source. The entire code is licensed under Apache 2.0 Feel free t
 :smile: Feel free to leave your Feedback / Comments / Suggestions
 
 
-If you do use this for your portfolio, please let me know via [@twitter](https://twitter.com/sujaykumarh) or email me
+If you do use this for your portfolio, please let me know via [@twitter](https://twitter.com/sujaykumarh) or [email me](mailto:hello@sujaykumarh.com)
