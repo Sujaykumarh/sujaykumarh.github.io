@@ -81,16 +81,18 @@ docs/.sass-cache
 docs/.jekyll-metadata
 docs/vendor
 
-_site
-.sass-cache
-.jekyll-metadata
-vendor
+# _site
+# .sass-cache
+# .jekyll-metadata
+# vendor
 
 
 
 ## Custom config
-cache/*
+!cache/.gitkeep
+!cache/.gitignore
 .vscode
 
 !.gitkeep
+!.gitignore
 .env
