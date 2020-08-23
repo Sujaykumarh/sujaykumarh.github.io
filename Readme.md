@@ -1,25 +1,59 @@
 # sujaykumarh.github.io
 
-:sunglasses: My Portfolio
+:sunglasses: My Portfolio Visit :point_right: [sujaykumarh.com](https://sujaykumarh.com/)
 
-Visit :point_right: [sujaykumarh.com](https://sujaykumarh.com/)
+:computer: Blog Visit :point_right: [sujaykumarh.com/blog](https://sujaykumarh.com/blog)
 
 
-<br>
+<br><br>
 
-Get inspired form some of these inspirational portfolio
+## Requirements
 
-1.  [mattfarley.ca](http://mattfarley.ca/)
+For Development / Production Env
 
-2.  [caferati.me](https://caferati.me/)
+- [Docker](https://docs.docker.com/get-docker/)
 
-3. 	[rleonardi.com](http://www.rleonardi.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
 
-4. 	[adhamdannaway.com](http://www.adhamdannaway.com)
 
-5. 	[kaneoflaherty.com](http://www.kaneoflaherty.com/)
+For Deployment on Github Pages 
 
-6.  [rachelbenderdesign.com](https://www.rachelbenderdesign.com/branding)
+- Go to repo [ Settings > GitHub Pages > Source ] and set folder to /docs and your branch if its not on master
+
+
+
+<br><br>
+
+## How To
+
+- To RUN Docker compose
+
+        for detached mode
+
+            $ docker-compose run up -d
+
+        for normal run
+
+            $ docker-compose run up
+
+
+<br><br>
+
+### Inspire
+
+Get inspired form some of these cool looking portfolio's
+
+1. [mattfarley.ca](http://mattfarley.ca/)
+
+2. [caferati.me](https://caferati.me/)
+
+3. [rleonardi.com](http://www.rleonardi.com/)
+
+4. [adhamdannaway.com](http://www.adhamdannaway.com)
+
+5. [kaneoflaherty.com](http://www.kaneoflaherty.com/)
+
+6. [rachelbenderdesign.com](https://www.rachelbenderdesign.com/branding)
 
 <br>
 
