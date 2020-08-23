@@ -43,17 +43,17 @@ For Deployment on Github Pages
 
 Get inspired form some of these cool looking portfolio's
 
-1. [mattfarley.ca](http://mattfarley.ca/)
+- [mattfarley.ca](http://mattfarley.ca/)
 
-2. [caferati.me](https://caferati.me/)
+- [caferati.me](https://caferati.me/)
 
-3. [rleonardi.com](http://www.rleonardi.com/)
+- [rleonardi.com](http://www.rleonardi.com/)
 
-4. [adhamdannaway.com](http://www.adhamdannaway.com)
+- [adhamdannaway.com](http://www.adhamdannaway.com)
 
-5. [kaneoflaherty.com](http://www.kaneoflaherty.com/)
+- [kaneoflaherty.com](http://www.kaneoflaherty.com/)
 
-6. [rachelbenderdesign.com](https://www.rachelbenderdesign.com/branding)
+- [rachelbenderdesign.com](https://www.rachelbenderdesign.com/branding)
 
 <br>
 
