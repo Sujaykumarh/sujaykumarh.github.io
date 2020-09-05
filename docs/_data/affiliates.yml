@@ -1,0 +1,81 @@
+#  Template
+# - title : ""
+#   desc  : ""
+#   category  : "cat"
+#   hide: true
+
+
+- title : "<b>Books</b>"
+  desc  : "Some of my favourite book recommendations"
+  category  : "books"
+  data: books
+  # hide: true
+
+
+- title : "<b>Computer</b> & Accessories"
+  desc  : "Some of my favourite Computer / Laptop / PC & Accessories recommendations"
+  category  : "computer"
+  data: computer
+  # hide: true
+  
+
+- title : "<b>Smart Phones</b> & Smart Devices"
+  desc  : "Some of my favourite SmartPhones & Smart Device recommendations"
+  category  : "smart-devices"
+  data: smart-devices
+  hide: true
+
+
+- title : "<b>Electronic</b> Components"
+  desc  : "Some of my favourite Electronic Components recommendations for DIY or iOT Projects or Electronic projects"
+  category  : "electronic"
+  data: electronic
+  hide: true
+
+
+- title : "<b>Camera</b> & Accessories"
+  desc  : "Some of my favourite Camera & Accessories recommendations"
+  category  : "camera"
+  data: camera
+  # hide: true
+
+
+- title : "<b>Music</b> Instruments"
+  desc  : "Some of my favourite Camera Accessories recommendations"
+  category  : "music"
+  data: music
+  # hide: true
+
+
+- title : "<b>Tools</b>"
+  desc  : "Some of my favourite Essential Tools / Power Tools / DIY Tools / WoodWorking Tools recommendations"
+  category  : "tools"
+  data: tools
+  # hide: true
+
+
+- title : "<b>Art</b> & Craft"
+  desc  : "Some of my favourite Art & Craft Supply recommendations"
+  category  : "art-craft"
+  data: art-craft
+  hide: true
+
+
+- title : "<b>Other</b>"
+  desc  : "Some of my favourite Other category recommendations"
+  category  : "other"
+  data: other
+  # hide: true
+
+- title : "<b>Safety</b> Equipment"
+  desc  : "Some of must have Safety Equipment recommendations"
+  category  : "safety"
+  data: safety
+  # hide: true
+  
+
+- title : "<b>Power</b> Tools"
+  desc  : "Some of my Power Tools / DIY Tools / Wood-Working Tool recommendations"
+  category  : "power-tools"
+  data: power-tools
+  # hide: true

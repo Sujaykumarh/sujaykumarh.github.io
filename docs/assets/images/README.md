@@ -8,6 +8,8 @@ All Images in this folder
 
 [Inkscape](https://inkscape.org/)
 
+[GIMP](https://gimp.org/)
+
 <br>
 
 

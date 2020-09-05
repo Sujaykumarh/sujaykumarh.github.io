@@ -1,0 +1,71 @@
+# category - books
+
+# - title : ""
+#   # desc  : ""
+#   short : ""
+#   link  : ""
+#   image  : ""
+#   img-at: ""
+#   category : books
+
+
+
+# category - books
+
+- title : "The Subtle Art of Not Giving a F*ck by Mark Manson"
+#   # desc  : ""
+  short : ""
+  link  : "https://amzn.to/3gWn9it"
+  image  : "https://m.media-amazon.com/images/I/51mN3bY0JjL._SY346_.jpg"
+  img-at: ""
+  category : books
+
+- title : "Everything Is F*cked: A Book About Hope by Mark Manson"
+#   # desc  : ""
+  short : ""
+  link  : "https://amzn.to/32WVyZw"
+  image  : "https://m.media-amazon.com/images/I/416T7uchqcL._SY346_.jpg"
+  img-at : ""
+  category : books
+
+- title : "How We Learn: The Surprising Truth About When, Where and Why It Happens by Benedict Carey"
+#   # desc  : ""
+  short : ""
+  link  : "https://amzn.to/31Yopgt"
+  image  : "https://m.media-amazon.com/images/I/41gQ-0u-j+L.jpg"
+  img-at : ""
+  category : books
+
+- title : "Winning the Brain Game by Matthew E. May"
+#   # desc  : ""
+  short : ""
+  link  : "https://amzn.to/3bufLcX"
+  image  : "https://m.media-amazon.com/images/I/51nAcBYbh6L._SY346_.jpg"
+  img-at : ""
+  category : books
+  
+- title : "Suggestible You: The Curious Science of Your Brain's Ability to Deceive, Transform, and Heal by Erik Vance"
+#   # desc  : ""
+  short : ""
+  link  : "https://amzn.to/31WPr8c"
+  image  : "https://m.media-amazon.com/images/I/41fp0w+2kRL.jpg"
+  img-at: ""
+  category : cameralate
+
+
+- title : "Rich Dad Poor Dad by Robert T. Kiyosaki"
+#   # desc  : ""
+  short : ""
+  link  : "https://amzn.to/31WLBvH"
+  image  : "https://m.media-amazon.com/images/I/51u8ZRDCVoL._SY346_.jpg"
+  img-at : ""
+  category : books
+
+
+# - title : "test"
+#   # desc  : ""
+#   short : ""
+#   link  : ""
+#   image  : ""
+#   img-at: ""
+#   category : books

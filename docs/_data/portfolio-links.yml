@@ -13,7 +13,18 @@
   link  : "dandeliview"
   image : "dandeliview.png"
 
+# - title : "DarviGroup"
+#   text  : "Website"
+#   link  : "darvigroup"
+#   image : "DarviGroup.png"
+
 ## Other Projects
+
+# - title : "Sujayz Bot"
+#   text  : "Telegram Bot"
+#   link  : "sujayz-bot"
+#   image : "sujayz-bot.png"
+#   type  : "other"
 
 - title : "xCelParser"
   text  : "Web Application"

@@ -17,11 +17,25 @@
         <div id="navbarLinks" class="collapse navbar-collapse py-2 py-lg-0">
             <ul class="navbar-nav ml-auto">
                 {% for item in site.data.navbar %}
-                {% assign class = nil %}
-                {% if page.active == item.active %} {% assign class = 'active' %} {% endif %}
-                <li class="nav-item py-3 px-3 {{ class }}">
-                    <a class="nav-link" href="{{ site.baseurl }}/{{ item.url }}">{{ item.title }}</a>
-                </li>
+                    {% assign class = nil %}
+                    {% if item.icon == true %} 
+                        <li class="nav-item py-3 px-3 {{ class }}">                            
+                            <a class="nav-link" 
+                                data-toggle="tooltip" 
+                                data-placement="bottom" 
+                                title="{{ item.title }}"
+                                href="{{ site.baseurl }}/{{ item.url }}">
+                                <i class="{{ item.fa-icon }}"></i>
+                            </a>
+                        </li>
+                    {% else %}
+                        {% if page.active == item.active %} 
+                            {% assign class = 'active' %} 
+                        {% endif %}
+                        <li class="nav-item py-3 px-3 {{ class }}">
+                            <a class="nav-link" href="{{ site.baseurl }}/{{ item.url }}">{{ item.title }}</a>
+                        </li>
+                    {% endif %}
                 {% endfor %}
             </ul>
         </div>
