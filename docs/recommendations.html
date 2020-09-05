@@ -1,0 +1,103 @@
+---
+title: Recommendations
+active: recommendations
+---
+
+
+<section class="pt-5">
+    <h1 class="section-title animated fadeIn pt-3"><b>Shop </b>Recommendations</h1>
+    <hr class="my-2 mb-3">
+
+    {% for cat in site.data.affiliates %}
+        {% if cat.hide != true %} 
+        <div class="row mb-5">
+            <div class="col col-12 col-md-2 text-center text-md-left">
+                <h5 class="section-title animated fadeIn pt-3">
+                    <a href="#{{ cat.category }}">{{ cat.title }}</a>
+                </h5>
+                <small class="section-subtitle text-small text-black-50 py-2">{{ cat.desc }}</small>
+            </div>
+            <div class="col col-12 col-md-8 offset-md-1 py-2">
+                <div class="row portfolio-links recommendations">
+                    {% for i in site.data.affiliate.{{ cat.data }} %}
+                        {% if cat.data == i[0] %} 
+                            {% for item in i[1] %}
+
+                                <div class="col col-6 col-md-3 p-0">
+                                    <a 
+                                        class="card card-focus mx-1 mb-3"
+                                        href="{{ item.link }}" 
+                                        target="_blank"
+                                        data-toggle="tooltip" 
+                                        data-placement="bottom" 
+                                        title="{{ item.title }}"
+                                        src="{{ item.image }}" 
+                                        alt="{{ item.desc }}"
+                                    >
+                                        <div class="img-recommendation img-container">
+                                            <img class="" src="{{ item.image }}" alt="">
+                                        </div>
+                                        <!-- <div class="img-container img-responsive">
+                                            <img class="img-fluid" src="{{ item.image }}" alt="">
+                                        </div> -->
+                                        {% if item.desc %} 
+                                        <div class="text-container p-3">
+                                            <small class="card-text text-extra-small">
+                                                {{ item.desc }}
+                                                <i class="fa-icon pl-2 fas fa-external-link-alt text-secondary text-extra-small"></i>
+                                            </small>                                        
+                                        </div>
+                                        {% endif %}
+                                    </a>
+                                </div>
+
+                            {% endfor %}
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+</section>
+
+
+<hr class="my-2">
+
+<section class="row py-5 animated fadeIn">
+    <div class="col col-12 text-small text-black-50">
+        <small>
+            <p>Disclaimer</p>
+            By purchasing products via the links provided you support me.   
+            I will not be held responsible in any way for the purchases you make via links to products or any other way. 
+            By using this website, you hereby agree to its 
+            <a class="underline" href="{{ site.baseurl }}/terms">Terms and Conditions</a> 
+            and consent to its <a class="underline" href="{{ site.baseurl }}/privacy">Privacy Policy</a>.
+            <br>
+
+
+            <br>
+            <p>Affiliate Disclaimer</p>
+            This page contains Amazon affiliate links to products. 
+            As an Amazon Associate I earn a commission for purchases 
+            made through these links at Amazon.com.
+            To know more read Amazon Affiliates
+            <a  class="underline"
+                href="https://www.amazon.in/gp/help/customer/display.html?ie=UTF8&nodeId=200545940" 
+                target="_blank" rel="noopener noreferrer">
+                Conditions of Use
+            </a>
+            <br>
+
+
+            <br>
+            <p>Pro Tip:</p>
+            If you shop on amazon Always check for seller authenticity [ check reviews or contact amazon ] or buy Amazon Fullfilled products for 
+            buyer safety and follow this on any other ecommerce website
+            <br>
+        </small>
+    </div>
+</section>
+
+
+<hr class="mt-0">

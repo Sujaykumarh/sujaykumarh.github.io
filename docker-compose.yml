@@ -6,6 +6,7 @@ networks:
 
 services: 
     jekyll:
+      # user: ${CURRENT_UID}
       image: jekyll/jekyll:latest
       container_name: portfolio_jekyll
       restart: unless-stopped

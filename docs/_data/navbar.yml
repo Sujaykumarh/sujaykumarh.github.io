@@ -19,3 +19,9 @@
 - title: Contact
   url: contact
   active: contact
+
+- fa-icon: fas fa-shopping-cart
+  title: Shop Recommendations
+  icon: true
+  url: recommendations
+  active: recommendations
