@@ -4,6 +4,7 @@
 
 :computer: Blog Visit :point_right: [sujaykumarh.com/blog](https://sujaykumarh.com/blog)
 
+:shopping_cart: Shop My Recommendations :point_right: [sujaykumarh.com/recommendations](https://sujaykumarh.com/recommendations)
 
 <br><br>
 
