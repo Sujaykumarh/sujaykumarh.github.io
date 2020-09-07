@@ -9,11 +9,43 @@
 #   img-at : ""
 #   category : computer
 
+# - title : ""
+#   # desc  : ""
+#   short : ""
+#   link  : ""
+#   image  : ""
+#   img-at : ""
+#   category : computer
+
 - title : "Antivirus: K7 Total Security - 1 PC, 3 Years"
   desc : "Antivirus: K7 Total Security - 1 PC, 3 Years"
   short : ""
   link  : "https://amzn.to/2QSKRl5"
   image  : "https://images-na.ssl-images-amazon.com/images/I/51Naj0jsuZL._SL1200_.jpg"
+  img-at : ""
+  category : computer
+
+- title : "Kindle Paperwhite (10th gen) - with Built-in Light, Waterproof, 8 GB, WiFi "
+  desc  : "Kindle 10th Gen - Waterproof, 6\" WiFi 8GB"
+  short : ""
+  link  : "https://amzn.to/325RZB2"
+  image  : "https://images-na.ssl-images-amazon.com/images/I/61MWcLEBkDL._SL1000_.jpg"
+  img-at : ""
+  category : computer
+
+- title : "Kindle (10th Gen), 6inch Display with Built-in Light, 8 GB, WiFi (Black) "
+  desc  : "Kindle 10th Gen - Not Waterproof, 6\" WiFi 8GB"
+  short : ""
+  link  : "https://amzn.to/3h9xpDU"
+  image : "https://images-na.ssl-images-amazon.com/images/I/61MWcLEBkDL._SL1000_.jpg"
+  img-at : ""
+  category : computer
+
+- title : "Fire TV Stick 4K with All-New Alexa Voice Remote | Streaming Media Player "
+  desc  : "Fire TV Stick 4K"
+  short : ""
+  link  : "https://amzn.to/35eepSu"
+  image  : "https://images-na.ssl-images-amazon.com/images/I/61RfMDdt-iL._SL1000_.jpg"
   img-at : ""
   category : computer
 
