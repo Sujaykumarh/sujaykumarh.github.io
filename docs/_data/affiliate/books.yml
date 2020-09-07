@@ -36,6 +36,14 @@
   img-at : ""
   category : books
 
+- title : "Ikigai: The Japanese secret to a long and happy life"
+  # desc  : ""
+  short : "Ikigai by Héctor García"
+  link  : "https://amzn.to/3i8YyIt"
+  image  : "https://m.media-amazon.com/images/I/51T8OXMiB5L.jpg"
+  img-at: ""
+  category : books
+
 - title : "Winning the Brain Game by Matthew E. May"
 #   # desc  : ""
   short : ""
@@ -60,6 +68,31 @@
   image  : "https://m.media-amazon.com/images/I/51u8ZRDCVoL._SY346_.jpg"
   img-at : ""
   category : books
+
+
+# - title : ""
+#   # desc  : ""
+#   short : ""
+#   link  : ""
+#   image  : ""
+#   img-at: ""
+#   category : books
+
+# - title : ""
+#   # desc  : ""
+#   short : ""
+#   link  : ""
+#   image  : ""
+#   img-at: ""
+#   category : books
+
+# - title : ""
+#   # desc  : ""
+#   short : ""
+#   link  : ""
+#   image  : ""
+#   img-at: ""
+#   category : books
 
 
 # - title : "test"
