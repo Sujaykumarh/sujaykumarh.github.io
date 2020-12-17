@@ -17,7 +17,7 @@ For Development / Production Env
 - [Docker Compose](https://docs.docker.com/compose/)
 
 
-For Deployment on Github Pages 
+For Deployment on Github Pages
 
 - Go to repo [ Settings > GitHub Pages > Source ] and set folder to /docs and your branch if its not on master
 
@@ -54,7 +54,6 @@ Get inspired form some of these cool looking portfolio's
 
 - [kaneoflaherty.com](http://www.kaneoflaherty.com/)
 
-- [rachelbenderdesign.com](https://www.rachelbenderdesign.com/branding)
 
 <br>
 
