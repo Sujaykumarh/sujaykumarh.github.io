@@ -5,7 +5,7 @@
 version: 2
 
 updates:
-- package-ecosystem: "ruby"
+- package-ecosystem: "bundler"
   # Files stored in repository docs
   directory: "/docs"
   schedule:
