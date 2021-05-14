@@ -1,10 +1,9 @@
-# sujaykumarh.github.io
+# Portfolio Site
 
 :sunglasses: My Portfolio Visit :point_right: [sujaykumarh.com](https://sujaykumarh.com/)
 
 :computer: Blog Visit :point_right: [sujaykumarh.com/blog](https://sujaykumarh.com/blog)
 
-:shopping_cart: Shop My Recommendations :point_right: [sujaykumarh.com/recommendations](https://sujaykumarh.com/recommendations)
 
 <br><br>
 
@@ -19,7 +18,7 @@ For Development / Production Env
 
 For Deployment on Github Pages
 
-- Go to repo [ Settings > GitHub Pages > Source ] and set folder to /docs and your branch if its not on master
+`Repo Settings > Pages > Source` and set source to `main` branch `/docs` folder
 
 
 
@@ -63,7 +62,7 @@ Get inspired form some of these cool looking portfolio's
 
 #### Code
 
-Copyright (c) 2019 Sujaykumar.Hublikar <hello@sujaykumarh.com>
+Copyright (c) 2019 - 2021 Sujaykumar.Hublikar <hello@sujaykumarh.com>
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
