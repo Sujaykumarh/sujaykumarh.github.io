@@ -1,0 +1,14 @@
+# Dependabot Configuration
+# https://docs.github.com/code-security/supply-chain-security/configuration-options-for-dependency-updates
+#
+
+version: 2
+
+updates:
+- package-ecosystem: "ruby"
+  # Files stored in repository docs
+  directory: "/docs"
+  schedule:
+    interval: "daily"
+#   ignore:
+#   - dependency-name: "packagesToIgnore"
