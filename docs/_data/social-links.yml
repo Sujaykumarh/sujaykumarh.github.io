@@ -17,14 +17,14 @@
   icon: fa-twitter
 
 # 3
-- title: Youtube
-  url: 'https://www.youtube.com/sujaykumarhublikar'
-  icon: fa-youtube
+# - title: Youtube
+#   url: 'https://www.youtube.com/sujaykumarhublikar'
+#   icon: fa-youtube
 
 # 4
-- title: Facebook
-  url: 'https://www.facebook.com/sujaykumarh.business'
-  icon: fa-facebook-square
+# - title: Facebook
+#   url: 'https://www.facebook.com/sujaykumarh.business'
+#   icon: fa-facebook-square
 
 # 5
 # - title: Docker
