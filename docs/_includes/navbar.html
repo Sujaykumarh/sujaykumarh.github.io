@@ -1,13 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-light sticky-top  transition-none">
     <div class="container disableSelector">
-        <!-- nav brand -->        
+        <!-- nav brand -->
         <a class="navbar-brand {% if page.active == 'home' %} d-none {% endif %}" href="/">
             <!--
             Sujaykumar. Hublikar
             -->
-            <img src="{{ site.baseurl }}/assets/images/icon.png" class="d-inline-block align-top" alt="" >
+            <img src="{{ site.baseurl }}/assets/images/favicon.png" class="d-inline-block align-top" alt="" >
         </a>
-        
+
         <!-- toggel icon -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks"
             aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,19 +18,19 @@
             <ul class="navbar-nav ml-auto">
                 {% for item in site.data.navbar %}
                     {% assign class = nil %}
-                    {% if item.icon == true %} 
-                        <li class="nav-item py-3 px-3 {{ class }}">                            
-                            <a class="nav-link" 
-                                data-toggle="tooltip" 
-                                data-placement="bottom" 
+                    {% if item.icon == true %}
+                        <li class="nav-item py-3 px-3 {{ class }}">
+                            <a class="nav-link"
+                                data-toggle="tooltip"
+                                data-placement="bottom"
                                 title="{{ item.title }}"
                                 href="{{ site.baseurl }}/{{ item.url }}">
                                 <i class="{{ item.fa-icon }}"></i>
                             </a>
                         </li>
                     {% else %}
-                        {% if page.active == item.active %} 
-                            {% assign class = 'active' %} 
+                        {% if page.active == item.active %}
+                            {% assign class = 'active' %}
                         {% endif %}
                         <li class="nav-item py-3 px-3 {{ class }}">
                             <a class="nav-link" href="{{ site.baseurl }}/{{ item.url }}">{{ item.title }}</a>
@@ -40,4 +40,4 @@
             </ul>
         </div>
     </div>
-</nav>       
+</nav>
