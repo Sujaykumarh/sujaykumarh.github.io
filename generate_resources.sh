@@ -305,6 +305,6 @@ processFavicon(){
     addEXIFData $OutputFile "avatar from getavataaars.com"  # add EXIF to image
 }
 
-# processFavicon
-# processSVGs
+processFavicon
+processSVGs
 processImages
