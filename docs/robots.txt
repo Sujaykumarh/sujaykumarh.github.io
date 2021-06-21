@@ -22,4 +22,4 @@ Disallow: /privacy.html
 Disallow: /terms.html
 
 # TODO
-# Sitemap: https://docs.nginxwall.com/sitemap.xml
+# Sitemap: https://sujaykumarh.com/sitemap.xml
