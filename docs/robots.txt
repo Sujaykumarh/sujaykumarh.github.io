@@ -1,0 +1,25 @@
+#     ^ ^
+#    (O,O)
+#    (   ) ROBOTS.txt
+#    -"-"----------------
+#
+# Stop snooping around you're not a robot.
+# Solve this reCaptcha to prove you are not a robot.
+#
+#     ___               ^ ^
+#    (o o)             (o o)
+#   (  V  ) reCaptcha (  V  )
+#   --m-m---------------m-m--
+
+User-agent: *
+Allow: /
+
+Disallow: /assets/
+Disallow: /design/
+Disallow: /portfolio/
+Disallow: /feed.xml
+Disallow: /privacy.html
+Disallow: /terms.html
+
+# TODO
+# Sitemap: https://docs.nginxwall.com/sitemap.xml
