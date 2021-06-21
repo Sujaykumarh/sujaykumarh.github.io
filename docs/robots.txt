@@ -21,5 +21,4 @@ Disallow: /feed.xml
 Disallow: /privacy.html
 Disallow: /terms.html
 
-# TODO
-# Sitemap: https://sujaykumarh.com/sitemap.xml
+Sitemap: https://sujaykumarh.com/sitemap.xml

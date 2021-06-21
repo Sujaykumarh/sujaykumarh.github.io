@@ -274,6 +274,7 @@ DEPENDENCIES
   github-pages
   jekyll-coffeescript
   jekyll-feed (~> 0.15)
+  jekyll-sitemap
   tzinfo-data
 
 BUNDLED WITH

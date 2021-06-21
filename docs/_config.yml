@@ -22,8 +22,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-coffeescript
+  - jekyll-sitemap
 #theme: minima
 #theme: jekyll-theme-minimal
 sass:
@@ -43,6 +44,11 @@ weburl : https://sujaykumarh.com/
 
 # front matter defaults
 defaults:
+  -
+    scope:
+      path:            "assets/**"
+    values:
+      sitemap:         false
   - scope:
       path: "" # an empty string here means all files in the project
     values:
