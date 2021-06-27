@@ -1,7 +1,7 @@
 # Navbar Items
 
 - title: Home
-  url: 
+  url:
   active: home
 
 - title: About
@@ -15,6 +15,11 @@
 - title: Blog
   url: blog
   active: blog
+
+# - title: My Notebook
+#   url: https://notebook.sujaykumarh.com/#/
+#   type: link
+#   target: _blank
 
 - title: Contact
   url: contact

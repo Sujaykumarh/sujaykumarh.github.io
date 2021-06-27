@@ -16,6 +16,7 @@
         <!-- navbar nav links -->
         <div id="navbarLinks" class="collapse navbar-collapse py-2 py-lg-0">
             <ul class="navbar-nav ml-auto">
+                <!--
                 {% for item in site.data.navbar %}
                     {% assign class = nil %}
                     {% if item.icon == true %}
@@ -36,6 +37,35 @@
                             <a class="nav-link" href="{{ site.baseurl }}/{{ item.url }}">{{ item.title }}</a>
                         </li>
                     {% endif %}
+                {% endfor %}
+                    -->
+
+                {% for item in site.data.navbar %}
+                    {% assign class = nil %}
+                    {% if page.active == item.active %}
+                        {% assign class = 'active' %}
+                    {% endif %}
+
+                    {% assign hrefURL = site.baseurl | append: '/' | append: item.url %}
+                    {% if item.type == 'link' %}
+                        {% assign hrefURL = item.url %}
+                    {% endif %}
+
+                    <li class="nav-item py-3 px-1 {{ class }}">
+                        <a class="nav-link {{ item.class }}"
+                            {% if item.icon != nil %}
+                                title="{{ item.title }}"
+                                data-toggle="tooltip"
+                                data-placement="bottom"
+                            {% endif %}
+                            {% if item.type != nil %}target="{{ item.target }}"{% endif %}
+                            href="{{ hrefURL }}">
+                            {% if item.icon != true %}
+                                <i class="{{ item.fa-icon }} pe-1 {% if item.shimmer %}shimmer{% endif %}"></i>
+                            {% endif %}
+                            <span class="{% if item.shimmer and page.active != item.active %}shimmer{% endif %}">{{ item.title }}</span>
+                        </a>
+                    </li>
                 {% endfor %}
             </ul>
         </div>
